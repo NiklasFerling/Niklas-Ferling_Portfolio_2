@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        glow1: ["0 0px 65px rgba(255, 255,255, 0.2)"],
+        glow2: ["0 0px 20px rgba(255,255, 255, 0.35)"],
+      },
+    },
   },
   plugins: [],
 };
