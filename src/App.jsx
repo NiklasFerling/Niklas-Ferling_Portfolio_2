@@ -1,8 +1,12 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+
 function App() {
   return (
-    <>
-      <h1 className="text-2xl">Vite + React</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<h1>Page Not Found</h1>} />
+    </Routes>
   );
 }
 
