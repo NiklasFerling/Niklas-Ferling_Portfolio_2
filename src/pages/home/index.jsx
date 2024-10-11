@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="min-h-screen text-white">
-      <div className="flex flex-col lg:flex-row justify-center h-full pt-20 lg:pt-28 gap-20">
+      <div className="flex flex-col lg:flex-row justify-center h-full pt-20 lg:pt-40 gap-20">
         <img
           src="/src/assets/niklas.jpg"
           alt="Niklas"
@@ -23,38 +25,50 @@ function Home() {
           </ul>
         </div>
       </div>
-      <h2 className="text-4xl text-center mt-28">
+      <h2 className="text-4xl text-center mt-40">
         Some of my development projects
       </h2>
       <div className="flex flex-col lg:flex-row justify-around py-20">
         <span>
           <h3 className="text-3xl">Project Exam</h3>
         </span>
-        <img
-          src="/src/assets/Holidaze.JPG"
-          alt="Screenshot of Project exam page"
-          className="w-fit h-96 object-cover border-none rounded-lg drop-shadow-glow1 hover:scale-95 transition-transform"
-        />
+        <Link
+          to="https://frolicking-mermaid-66b253.netlify.app"
+          target="_blank"
+        >
+          <img
+            src="/src/assets/Holidaze.JPG"
+            alt="Screenshot of Project exam page"
+            className="w-fit h-96 object-cover border-none rounded-lg drop-shadow-glow1 hover:scale-95 transition-transform"
+          />
+        </Link>
       </div>
       <div className="flex flex-col lg:flex-row-reverse justify-around py-20">
         <span>
           <h3 className="text-3xl">JS Frameworks - Course Assignment</h3>
         </span>
-        <img
-          src="/src/assets/React-ca.JPG"
-          alt="Screenshot of Project exam page"
-          className="w-fit h-96 object-cover border-none rounded-lg drop-shadow-glow1 hover:scale-95 transition-transform"
-        />
+        <Link
+          to="https://courageous-cheesecake-47a410.netlify.app"
+          target="_blank"
+        >
+          <img
+            src="/src/assets/React-ca.JPG"
+            alt="Screenshot of Project exam page"
+            className="w-fit h-96 object-cover border-none rounded-lg drop-shadow-glow1 hover:scale-95 transition-transform"
+          />
+        </Link>
       </div>
       <div className="flex flex-col lg:flex-row justify-around py-20">
         <span>
           <h3 className="text-3xl">Semester Project</h3>
         </span>
-        <img
-          src="/src/assets/Devpedia.JPG"
-          alt="Screenshot of Project exam page"
-          className="w-fit h-96 object-cover border-none rounded-lg drop-shadow-glow1 hover:scale-95 transition-transform"
-        />
+        <Link>
+          <img
+            src="/src/assets/Devpedia.JPG"
+            alt="Screenshot of Project exam page"
+            className="w-fit h-96 object-cover border-none rounded-lg drop-shadow-glow1 hover:scale-95 transition-transform"
+          />
+        </Link>
       </div>
     </div>
   );

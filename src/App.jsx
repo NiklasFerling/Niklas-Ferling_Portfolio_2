@@ -3,7 +3,7 @@ import Home from "./pages/home";
 
 function App() {
   return (
-    <div className="bg-neutral-900 bg-[url('/src/assets/bg.jpg')] bg-contain bg-top bg-no-repeat">
+    <div className="bg-neutral-900">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<h1>Page Not Found</h1>} />
